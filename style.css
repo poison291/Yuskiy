@@ -50,6 +50,19 @@ h1::after {
   border-radius: 2px;
   background: linear-gradient(to right, #d4af37, #c86b00);
 }
+.title-container {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+.title-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 
 /* --- Layout --- */
 .drama-types {
