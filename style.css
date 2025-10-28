@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Noto Sans JP", Arial, sans-serif;
+  background-color: #fff;
+}
+
+body {
+  background: url("digital-art-beautiful-mountains.jpg") no-repeat center center;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  padding-top: 100px;
+  z-index: 1;
+}
+
+/* --- Modern Japanese Aesthetic Title --- */
+h1 {
+  font-family: "Zen Old Mincho", "Noto Serif JP", serif;
+  font-weight: 700;
+  font-size: 5em;
+  color: #1c1c1c;
+  text-align: center;
+  letter-spacing: 6px;
+  text-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  margin-bottom: 100px;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h1::after {
+  content: "";
+  display: block;
+  margin: 10px auto 0 auto;
+  width: 160px;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(to right, #d4af37, #c86b00);
+}
+
+/* --- Layout --- */
+.drama-types {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 0 100px;
+  gap: 60px;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.drama-type p {
+  font-size: 1.05em;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.drama-type a {
+  display: inline-block;
+  font-size: 1em;
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+
+.drama-type a:hover {
+  color: #0b47a1;
+  text-shadow: 0 0 6px rgba(26, 115, 232, 0.4);
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .drama-types {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 0 40px;
+  }
+
+  h1 {
+    font-size: 3.5em;
+    margin-bottom: 80px;
+  }
+
+  .drama-type p,
+  .drama-type a {
+    font-size: 0.95em;
+  }
+}
