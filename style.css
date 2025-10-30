@@ -9,7 +9,8 @@ html {
   height: 100%;
   font-family: Arial, Helvetica;
   background-color: #fff;
-  background: url("digital-art-beautiful-mountains.jpg") no-repeat center center;
+  background: url("images/digital-art-beautiful-mountains.jpg") no-repeat center
+    center;
   background-size: cover;
   overflow-x: hidden;
 }
@@ -20,7 +21,6 @@ html {
   position: relative;
 }
 
-/* --- Title --- */
 .japanese-title {
   font-weight: 700;
 
@@ -43,7 +43,6 @@ html {
   background: linear-gradient(to right, #d4af37, #c86b00);
 }
 
-/* --- Layout --- */
 .drama-types {
   display: flex;
   justify-content: space-between;
@@ -81,7 +80,6 @@ html {
   text-shadow: 0 0 6px rgba(26, 115, 232, 0.4);
 }
 
-/* --- Responsive --- */
 @media (max-width: 1024px) {
   .drama-types {
     flex-direction: column;
@@ -100,5 +98,3 @@ html {
     font-size: 0.95em;
   }
 }
-
-
